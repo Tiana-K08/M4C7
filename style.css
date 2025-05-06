@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    color: #333333;
 }
 
 header {
@@ -22,10 +23,24 @@ main {
     margin-top: 10px;
 }
 
-.question-container {
+.question-wrapper {
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
     background-color: #97f295;
-    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer-wrapper {
+    margin: 0 5px;
+    padding: 0 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-wrapper > .arrow-2 {
+    align-self: flex-end;
 }
