@@ -39,6 +39,12 @@ main {
     background-color: #f1f1f1;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    max-height: max-content;
+}
+
+.close {
+    max-height: 0;
 }
 
 .answer-wrapper > .arrow-2 {
