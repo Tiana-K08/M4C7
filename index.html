@@ -272,7 +272,54 @@
             </div>
             <div class="answer-wrapper close">
                 <div class="answer-contenido">
-
+                    <p>
+                        JavaScript nos proporciona una gran cantidad de funciones integradas (métodos) que permiten analizar, modificar o formatear cadenas de texto. En este material, vamos a ver tres funciones (o, más exactamente, métodos) del objeto String, que se utilizan con mayor frecuencia en la práctica real:
+                    </p>
+                    <p>
+                        &#128204 El método <b>length</b> muestra cuántos caracteres hay en una cadena. Esto incluye espacios, signos de puntuación, caracteres especiales e incluso emojis.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let message = '¡Hola, mundo!';
+    console.log(message.length); // 13          
+                    </code></pre>
+                    <p>
+                        &#128204 El método <b>includes()</b> permite verificar si un valor está contenido dentro de una cadena. Devuelve <i>true</i> si lo contiene y <i>false</i> si no.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let text = '¡JavaScript es genial!';
+    console.log(text.includes('genial'));  // true
+    console.log(text.includes('Python'));  // false         
+                    </code></pre>
+                    <p>
+                        &#128204 <b>toLowerCase()</b> convierte todas las letras de una cadena a minúsculas y <b>toUpperCase()</b> convierte todas las letras de una cadena a mayúsculas.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let name = "Anne";
+    console.log(name.toLowerCase()); // anne
+    console.log(name.toUpperCase()); // ANNE        
+                    </code></pre>
+                    <p>
+                        Los métodos length, includes(), toLowerCase() y toUpperCase() son solo una pequeña parte de lo que el tipo String puede hacer en JavaScript. De hecho, existen decenas de métodos integrados que permiten:
+                    </p>
+                    <ul>
+                        <li>recortar cadenas (slice, substring)</li>
+                        <li>dividir cadenas en partes (split),</li>
+                        <li>reemplazar partes de una cadena (replace),</li>
+                        <li>eliminar espacios innecesarios (trim),</li>
+                        <li>encontrar posiciones de caracteres (indexOf, lastIndexOf)</li>
+                    </ul>
+                    <p>
+                        Estas herramientas hacen que trabajar con texto sea cómodo, flexible y potente, especialmente en el desarrollo web, donde las cadenas de texto están por todas partes: en formularios, títulos, mensajes, URLs y datos.
+                    </p>
                 </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
