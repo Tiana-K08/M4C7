@@ -61,11 +61,64 @@ main {
 
 .answer-wrapper > .arrow-2 {
     align-self: flex-end;
+    padding-bottom: 10px;
 }
 
 .answer-wrapper > .arrow-2:hover {
     cursor: pointer;
 }
+
+.answer-contenido {
+    padding: 10px 8vw;
+}
+
+p, pre, ul, li, dl, dt, dd {
+    font-size: 1.2rem;
+}
+
+.answer-contenido p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.answer-contenido .img-wrapper {
+    width: 60vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.answer-contenido .img-wrapper > img {
+    width: 100%;
+}
+
+.answer-contenido .title-text {
+    text-align: center;
+}
+
+.answer-contenido dd {
+    margin: 0 0 10px 0;
+    text-align: justify
+}
+
+.answer-contenido .table-languages {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-languages th, .table-languages td {
+    border: 1px solid #333333;
+    padding: 8px;
+    font-size: clamp(1px, 1vw, 40px);
+}
+
+
+
+
+
+
+
 
 pre {
     background-color: #333333;
