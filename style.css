@@ -33,6 +33,14 @@ main {
     align-items: center;
 }
 
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.down {
+    transform: rotate(180deg);
+}
+
 .answer-wrapper {
     margin: 0 5px;
     padding: 0 10px;
@@ -43,7 +51,7 @@ main {
     max-height: max-content;
 }
 
-.close {
+.answer-wrapper.close {
     max-height: 0;
 }
 
