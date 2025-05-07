@@ -33,12 +33,16 @@ main {
     align-items: center;
 }
 
+.question-wrapper:hover {
+    cursor: pointer;
+}
+
 .arrow {
     transition: transform 0.3s ease;
 }
 
 .arrow.down {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 
 .answer-wrapper {
@@ -57,4 +61,8 @@ main {
 
 .answer-wrapper > .arrow-2 {
     align-self: flex-end;
+}
+
+.answer-wrapper > .arrow-2:hover {
+    cursor: pointer;
 }
