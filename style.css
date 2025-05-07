@@ -66,3 +66,8 @@ main {
 .answer-wrapper > .arrow-2:hover {
     cursor: pointer;
 }
+
+pre {
+    background-color: #333333;
+    color: #f1f1f1;
+}

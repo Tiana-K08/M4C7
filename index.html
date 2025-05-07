@@ -19,7 +19,7 @@
             <div class="answer-wrapper close">
                 <div class="answer-contenido">
                     <p>
-                        &#128204 <b>JavaScript (abreviado como JS)</b> es un lenguaje de programación versátil que permite que las páginas web sean interactivas y fáciles de usar. Gracias a él, los sitios web tienen botones, ventanas emergentes, formularios de entrada, reacciones a las acciones del usuario y muchos otros elementos. Sin JavaScript, una página sería estática. Con JavaScript, responde a las acciones del usuario.
+                        <b>JavaScript (abreviado como JS)</b> es un lenguaje de programación versátil que permite que las páginas web sean interactivas y fáciles de usar. Gracias a él, los sitios web tienen botones, ventanas emergentes, formularios de entrada, reacciones a las acciones del usuario y muchos otros elementos. Sin JavaScript, una página sería estática. Con JavaScript, responde a las acciones del usuario.
                     </p>
                     <p>
                         &#128204 Aunque originalmente JavaScript fue creado como un lenguaje para navegadores, hoy en día se utiliza no solo para sitios web, sino también <b>para desarrollar diversos tipos de programas</b>: desde aplicaciones web hasta servidores, aplicaciones móviles y videojuegos.
@@ -27,7 +27,9 @@
                     <div class="img-wrapper">
                         <img src="images/js_using.png" alt="Dónde se utiliza JavaScript">
                     </div>
-                    <p><strong>Dónde se utiliza JavaScript</strong></p>
+                    <p>
+                        <strong>Dónde se utiliza JavaScript</strong>
+                    </p>
                     <dl>
                         <dt><b>Frontend de aplicaciones web</b></dt>
                         <dd>
@@ -72,7 +74,9 @@
                             JavaScript también se utiliza en el Internet de las cosas (IoT), que es un sistema para intercambiar información entre dispositivos conectados a una red. Ejemplos de estos dispositivos son bien conocidos: relojes inteligentes, rastreadores de actividad, alarmas de incendio. Para ellos, se escriben programas en JavaScript utilizando frameworks como Cylon.js y Johnny-Five.
                         </dd>
                     </dl>
-                    <p>&#128204 <b>Comparación de JavaScript con otros lenguajes de programación.</b></p>
+                    <p>
+                        &#128204 <b>Comparación de JavaScript con otros lenguajes de programación.</b>
+                    </p>
                     <table border="1" cellpadding="8" cellspacing="0">
                         <thead>
                             <tr>
@@ -131,7 +135,133 @@
                 <div class="arrow down">&#9650;</div>
             </div>
             <div class="answer-wrapper close">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum veniam fugit omnis repellendus maxime debitis. Animi nulla deleniti laudantium?
+                <div class="answer-contenido">
+                    <p>
+                        Cuando escribimos programas en cualquier lenguaje, incluido JavaScript, trabajamos constantemente con datos. Estos datos pueden ser de diferentes tipos: números, texto, objetos, etc. Para que JavaScript entienda correctamente con qué tipo de datos está trabajando, los clasifica en tipos de datos.
+                    </p>
+                    <div class="img-wrapper">
+                        <img src="images/js_data_types.png" alt="Data types JS">
+                    </div>
+                    <p>
+                        &#128204 Los datos alfanuméricos en JavaScript se definen con el tipo de dato <b>cadena</b> <i>(string)</i>. Una cadena puede contener un solo carácter, muchos caracteres o no contener ninguno (una cadena vacía).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    'Hello, World!'
+    "Hello, World!"
+                    </code></pre>
+                    <p>
+                        Cualquier cadena en JavaScript debe estar encerrada entre comillas simples o dobles. No existe una regla estricta sobre cuál tipo de comillas usar. El estándar de codificación de Airbnb recomienda usar comillas simples. Algunas fuentes también sugieren usar comillas simples para el código JavaScript y comillas dobles para el código HTML, pero esto depende de la preferencia personal de cada desarrollador. Lo importante es que el estilo se mantenga consistente en todo el documento.
+                    </p>
+                    <p>
+                        &#128204 El tipo de dato <b>número</b> <i>(number)</i> incluye tanto enteros (positivos y negativos) como números reales (decimales, con punto flotante).
+                    </p>
+                    <p>
+                        Además de los números comunes, este tipo de dato también incluye lo que se conoce como valores numéricos especiales:
+                    </p>
+                    <ul>
+                        <li><b>Infinity</b> representa la infinitud matemática, que es mayor que cualquier número. En programación, es bien conocida la «división por 0». En lenguajes de bajo nivel, esto provoca un fallo en el programa y la necesidad de reiniciarlo. Sin embargo, JavaScript sigue funcionando y devuelve Infinity.</li>
+                        <li><b>-Infinity</b> representa la infinitud matemática negativa, que es menor que cualquier número. Es el resultado de dividir un número negativo entre 0.</li>
+                        <li><b>NaN</b> <i>(not a number)</i> significa error de cálculo, no es un número. Es el resultado de una operación matemática incorrecta o indefinida. Cualquier operación matemática que contenga NaN devuelve NaN. Hay una sola excepción: NaN elevado a la potencia de 0 es igual a 1.</li>
+                    </ul>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let age = 25;
+    let price = 99.99;
+                    </code></pre>
+                    <p>
+                        &#128204 En JavaScript, el tipo de dato numérico solo puede trabajar dentro del rango de números ±(253-1). Fuera de este rango, se producirá un error de precisión, ya que no todos los dígitos caben en una memoria de 64 bits fija. En la mayoría de los casos, el rango seguro de números es suficiente, pero a veces necesitamos trabajar con números realmente gigantes sin ningún límite. En ese caso, se utiliza el tipo de dato <b>bigint</b>. Este tipo permite trabajar con enteros de longitud arbitraria. Para crear un valor de tipo bigint, es necesario agregar una <i>n</i> al final del literal numérico.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    console.log(5465455647852456554235); // 5.465455647852457e+21
+    console.log(5465455647852456554235n); // 5465455647852456554235n
+                    </code></pre>
+                    <p>
+                        Actualmente, el tipo de dato bigint solo es compatible con los navegadores Firefox, Chrome, Edge y Safari.
+                    </p>
+                    <p>
+                        &#128204 El tipo de dato <b>booleano</b> <i>(boolean)</i> solo puede tomar dos valores: <i>true</i> (sí, verdadero) o <i>false</i> (no, falso).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    console.log(5 > 2); // true
+    console.log(5 < 2); // false
+                    </code></pre>
+                    <p>
+                        &#128204 El valor especial <b>null</b> no pertenece a ninguno de los tipos de datos mencionados anteriormente. Forma un tipo de dato independiente. En JavaScript, null no representa un valor numérico cero ni una referencia a un objeto inexistente, como ocurre en algunos otros lenguajes de programación. Es un valor especial que indica: nada, vacío, valor desconocido.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let user = null; // el usuario no está autorizado
+                    </code></pre>
+                    <p>
+                        &#128204 El valor especial <b>undefined</b> también forma un tipo de dato independiente. Indica que algo no está definido, es decir, que no se ha asignado un valor. Este valor puede ser establecido automáticamente por defecto o asignado manualmente (lo cual no se recomienda).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let item;
+    console.log(item); // undefined   
+                    </code></pre>
+                    <p>
+                        &#128204 <b>Symbol</b> es un tipo de dato primitivo, único e inmutable, que se utiliza para crear identificadores únicos.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let mySym = Symbol('id');
+    console.log(mySym) // id  
+                    </code></pre>
+                    <p>
+                        &#128204 El tipo de dato <b>objeto</b> <i>(object)</i> es más complejo en comparación con los tipos de datos primitivos mencionados anteriormente. Puede almacenar colecciones de datos o estructuras más complejas. Guarda información en forma de pares clave-valor (key-value).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let person = {
+        name: 'Anne',
+        age: 25,
+        isStudent: true
+    };
+    console.log(person.name); // Anne
+                    </code></pre>
+                    <p>
+                        &#128204 Un <b>array</b> es una lista ordenada de valores (esencialmente, un objeto con índices numéricos).
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    let fruits = ['apple', 'banana', 'pear'];
+    console.log(fruits[1]); // banana      
+                    </code></pre>
+                    <p>
+                        &#128204 Una <b>función</b> <i>(function)</i> es un objeto que se puede ejecutar.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+    function greet(name) {
+        console.log('Hola, ' + name);
+    }
+    greet("Anne"); // Hola, Anne           
+                    </code></pre>
+                </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
@@ -141,7 +271,9 @@
                 <div class="arrow down">&#9650;</div>
             </div>
             <div class="answer-wrapper close">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum veniam fugit omnis repellendus maxime debitis. Animi nulla deleniti laudantium?
+                <div class="answer-contenido">
+
+                </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
@@ -151,7 +283,9 @@
                 <div class="arrow down">&#9650;</div>
             </div>
             <div class="answer-wrapper close">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum veniam fugit omnis repellendus maxime debitis. Animi nulla deleniti laudantium?
+                <div class="answer-contenido">
+                    
+                </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
@@ -161,7 +295,9 @@
                 <div class="arrow down">&#9650;</div>
             </div>
             <div class="answer-wrapper close">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum veniam fugit omnis repellendus maxime debitis. Animi nulla deleniti laudantium?
+                <div class="answer-contenido">
+                    
+                </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
@@ -171,7 +307,9 @@
                 <div class="arrow down">&#9650;</div>
             </div>
             <div class="answer-wrapper close">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum veniam fugit omnis repellendus maxime debitis. Animi nulla deleniti laudantium?
+                <div class="answer-contenido">
+                    
+                </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
@@ -181,7 +319,9 @@
                 <div class="arrow down">&#9650;</div>
             </div>
             <div class="answer-wrapper close">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illum veniam fugit omnis repellendus maxime debitis. Animi nulla deleniti laudantium?
+                <div class="answer-contenido">
+                    
+                </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
         </div>
