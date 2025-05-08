@@ -353,7 +353,110 @@ console.log(name.toUpperCase()); // ANNE
             </div>
             <div class="answer-wrapper close">
                 <div class="answer-contenido">
-                    
+                    <p>
+                        En programación, a menudo surge la necesidad de tomar decisiones. Por ejemplo, si el usuario introduce la contraseña correcta, se le permite acceder al sistema; si no, se muestra un error. Estas situaciones las resolvemos mediante <b>condiciones</b>: estructuras especiales que permiten ejecutar diferentes bloques de código dependiendo de ciertas circunstancias.
+                    </p>
+                    <p>
+                        La condición le dice a la computadora: "si ocurre esto, haz aquello; de lo contrario, haz otra cosa". Gracias a las condiciones, el programa se vuelve inteligente: responde a los datos y cambia su comportamiento según la situación. Esta es la base de toda lógica en un programa: si algo es verdadero, se hace una cosa; si no, se hace otra.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204 La forma más básica de escribir una condición es usando el operador <b>if</b>. Esto significa: si la expresión es verdadera, se ejecuta el código dentro de las llaves.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/if.png" alt="Condición if">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let age = 20;
+
+if (age >= 18) {
+    console.log('Usted es mayor de edad.');
+}            
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204 Cuando se necesita elegir entre dos acciones - una si se cumple la condición y otra si no se cumple — se utilizan los operadores condicionales con alternativa <b>if / else</b>.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/if_else.png" alt="Condición if / else">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let isLoggedIn = false;
+
+if (isLoggedIn) {
+    console.log('¡Bienvenido!');
+} else {
+    console.log('Por favor, inicie sesión.');
+}              
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204 Si hay más de dos opciones, se pueden agregar verificaciones adicionales utilizando los operadores de condiciones múltiples <b>if / else if / else</b>.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/if_else_if.png" alt="Condición if / else if / else">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let score = 85;
+
+if (score >= 90) {
+    console.log('Calificación: excelente');
+} else if (score >= 70) {
+    console.log('Calificación: bien');
+} else {
+    console.log('Calificación: satisfactorio');
+}                      
+                    </code></pre>
+                    <hr>
+                    <p>
+                        &#128204 Cuando tenemos muchos valores diferentes para una misma expresión, en lugar de usar una gran cantidad de <b>if / else if … / else</b>, podemos utilizar la estructura <b>switch</b>.
+                    </p>
+                    <div class="img-wrapper-vertical">
+                        <img src="images/switch.png" alt="Condición switch">
+                    </div>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let day = 'miércoles';
+
+switch (day) {
+    case 'lunes':
+        console.log('Inicio de la semana');
+        break;
+    case 'miércoles':
+        console.log('Mitad de la semana');
+        break;
+    case 'viernes':
+        console.log('Final de la semana');
+        break;
+    default:
+        console.log('Día normal');
+}                         
+                    </code></pre>
+                    <p>
+                        Cómo funciona switch:
+                    </p>
+                    <ul>
+                        <li>
+                            El valor se compara con cada <i>case</i> mediante igualdad estricta (===).
+                        </li>
+                        <li>
+                            Cuando se encuentra una coincidencia, se ejecuta el bloque correspondiente.
+                        </li>
+                        <li>
+                            El <i>break</i> es necesario para detener la ejecución después de la primera coincidencia. Sin él, la ejecución continuará hacia los siguientes <i>case</i>.
+                        </li>
+                    </ul>
                 </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
