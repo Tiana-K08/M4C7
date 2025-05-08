@@ -133,11 +133,7 @@ p, pre, ul, li, dl, dt, dd {
     padding-left: 20px;
 }
 
-
-
-
-
-pre {
+.answer-contenido pre {
     padding-left: 20px;
     padding-right: 5px;
     background-color: #333333;
