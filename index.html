@@ -469,7 +469,39 @@ switch (day) {
             </div>
             <div class="answer-wrapper close">
                 <div class="answer-contenido">
-                    
+                    <p>
+                        &#128204 El operador ternario es una forma corta de escribir una condición. Su función es elegir uno de dos valores dependiendo de si se cumple la condición o no. Es una versión abreviada de <i>if / else</i> que es adecuada para verificaciones simples y asignación de valores. Se llama "ternario" porque trabaja con tres operandos:
+                    </p>
+                    <ul>
+                        <li>la condición</li>
+                        <li>el valor si la condición es verdadera (true)</li>
+                        <li>el valor si la condición es falsa (false)</li>
+                    </ul>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+let age = 17;
+let message = age >= 18 ? 'Acceso permitido' : 'Acceso denegado';
+console.log(message); // Acceso denegado
+                    </code></pre>
+                    <p>
+                        La misma lógica con <i>if / else</i> se vería así:
+                    </p>
+                    <pre><code>
+let age = 17;
+
+if (age >= 18) {
+    message = 'Acceso permitido';
+} else {
+    message = 'Acceso denegado';
+}
+
+console.log(message); // Acceso denegado                                             
+                    </code></pre>
+                    <p>
+                        Como puedes ver, el operador ternario es más corto y es ideal para condiciones simples.
+                    </p>
                 </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
