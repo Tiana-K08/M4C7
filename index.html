@@ -514,7 +514,50 @@ console.log(message); // Acceso denegado
             </div>
             <div class="answer-wrapper close">
                 <div class="answer-contenido">
-                    
+                    <p>
+                        Las funciones son uno de los bloques fundamentales en JavaScript. Permiten agrupar código, reutilizarlo varias veces, aceptar parámetros, devolver valores y hacer que el programa sea más organizado y legible. En JavaScript, hay dos formas principales de crear funciones:
+                    </p>
+                    <ul>
+                        <li>Declaración de función <i>(Function Declaration)</i></li>
+                        <li>Expresión de función <i>(Function Expression)</i></li>
+                    </ul>
+                    <p>
+                        A simple vista se parecen, pero funcionan de manera diferente, especialmente en lo que respecta al orden de ejecución del código.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204 La <b>declaración de función</b> es la forma clásica de crear una función. Esta función tiene un nombre y puede ser llamada en cualquier parte del archivo, incluso antes de su definición.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+function greet(name) {
+    console.log('Hola, ' + name);
+}
+                          
+greet('Anne'); // Hola, Anne     
+                    </code></pre>
+                    <p>
+                        Ventaja principal: el <b>hoisting</b> — puedes llamar a este tipo de función incluso antes de que esté definida en el código, porque JavaScript “eleva” (hoists) las declaraciones de función al inicio del ámbito.
+                    </p>
+                    <hr>
+                    <p>
+                        &#128204 La <b>expresión de función</b> se crea como un valor y se asigna a una variable. Puede ser una función con nombre o una función anónima.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+const greet = function(name) {
+    console.log('Hola, ' + name);
+};
+                          
+greet('Olga'); // Hola, Olga            
+                    </code></pre>
+                    <p>
+                        Diferencia clave: no se puede llamar a esta función antes de su creación. Si intentas hacerlo antes de su declaración, se producirá un error porque las expresiones de función no se elevan (no hacen hoisting) como las declaraciones.
+                    </p>
                 </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
