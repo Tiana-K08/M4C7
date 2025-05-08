@@ -110,17 +110,28 @@ p, pre, ul, li, dl, dt, dd {
 .table-languages th, .table-languages td {
     border: 1px solid #333333;
     padding: 8px;
-    font-size: clamp(1px, 1vw, 40px);
+    font-size: clamp(1px, 1vw, 16px);
+}
+
+.answer-contenido hr {
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.answer-contenido li {
+    margin-left: 20px;
+    padding-left: 20px;
 }
 
 
 
 
 
-
-
-
 pre {
+    padding-left: 20px;
+    padding-right: 5px;
     background-color: #333333;
     color: #f1f1f1;
+    text-wrap: wrap;
+    font-size: clamp(1px, 3vw, 16px);;
 }

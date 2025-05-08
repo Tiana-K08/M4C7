@@ -22,6 +22,7 @@
                     <p>
                         <b>JavaScript (abreviado como JS)</b> es un lenguaje de programación versátil que permite que las páginas web sean interactivas y fáciles de usar. Gracias a él, los sitios web tienen botones, ventanas emergentes, formularios de entrada, reacciones a las acciones del usuario y muchos otros elementos. Sin JavaScript, una página sería estática. Con JavaScript, responde a las acciones del usuario.
                     </p>
+                    <hr>
                     <p>
                         &#128204 Aunque originalmente JavaScript fue creado como un lenguaje para navegadores, hoy en día se utiliza no solo para sitios web, sino también <b>para desarrollar diversos tipos de programas</b>: desde aplicaciones web hasta servidores, aplicaciones móviles y videojuegos.
                     </p>
@@ -75,6 +76,7 @@
                             JavaScript también se utiliza en el Internet de las cosas (IoT), que es un sistema para intercambiar información entre dispositivos conectados a una red. Ejemplos de estos dispositivos son bien conocidos: relojes inteligentes, rastreadores de actividad, alarmas de incendio. Para ellos, se escriben programas en JavaScript utilizando frameworks como Cylon.js y Johnny-Five.
                         </dd>
                     </dl>
+                    <hr>
                     <p>
                         &#128204 <b>Comparación de JavaScript con otros lenguajes de programación.</b>
                     </p>
@@ -146,6 +148,7 @@
                     <div class="img-wrapper">
                         <img src="images/js_data_types.png" alt="Data types JS">
                     </div>
+                    <hr>
                     <p>
                         &#128204 Los datos alfanuméricos en JavaScript se definen con el tipo de dato <b>cadena</b> <i>(string)</i>. Una cadena puede contener un solo carácter, muchos caracteres o no contener ninguno (una cadena vacía).
                     </p>
@@ -153,12 +156,13 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    'Hello, World!'
-    "Hello, World!"
+'Hello, World!'
+"Hello, World!"
                     </code></pre>
                     <p>
                         Cualquier cadena en JavaScript debe estar encerrada entre comillas simples o dobles. No existe una regla estricta sobre cuál tipo de comillas usar. El estándar de codificación de Airbnb recomienda usar comillas simples. Algunas fuentes también sugieren usar comillas simples para el código JavaScript y comillas dobles para el código HTML, pero esto depende de la preferencia personal de cada desarrollador. Lo importante es que el estilo se mantenga consistente en todo el documento.
                     </p>
+                    <hr>
                     <p>
                         &#128204 El tipo de dato <b>número</b> <i>(number)</i> incluye tanto enteros (positivos y negativos) como números reales (decimales, con punto flotante).
                     </p>
@@ -174,9 +178,10 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let age = 25;
-    let price = 99.99;
+let age = 25;
+let price = 99.99;
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 En JavaScript, el tipo de dato numérico solo puede trabajar dentro del rango de números ±(253-1). Fuera de este rango, se producirá un error de precisión, ya que no todos los dígitos caben en una memoria de 64 bits fija. En la mayoría de los casos, el rango seguro de números es suficiente, pero a veces necesitamos trabajar con números realmente gigantes sin ningún límite. En ese caso, se utiliza el tipo de dato <b>bigint</b>. Este tipo permite trabajar con enteros de longitud arbitraria. Para crear un valor de tipo bigint, es necesario agregar una <i>n</i> al final del literal numérico.
                     </p>
@@ -184,12 +189,13 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    console.log(5465455647852456554235); // 5.465455647852457e+21
-    console.log(5465455647852456554235n); // 5465455647852456554235n
+console.log(5465455647852456554235); // 5.465455647852457e+21
+console.log(5465455647852456554235n); // 5465455647852456554235n
                     </code></pre>
                     <p>
                         Actualmente, el tipo de dato bigint solo es compatible con los navegadores Firefox, Chrome, Edge y Safari.
                     </p>
+                    <hr>
                     <p>
                         &#128204 El tipo de dato <b>booleano</b> <i>(boolean)</i> solo puede tomar dos valores: <i>true</i> (sí, verdadero) o <i>false</i> (no, falso).
                     </p>
@@ -197,9 +203,10 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    console.log(5 > 2); // true
-    console.log(5 < 2); // false
+console.log(5 > 2); // true
+console.log(5 < 2); // false
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 El valor especial <b>null</b> no pertenece a ninguno de los tipos de datos mencionados anteriormente. Forma un tipo de dato independiente. En JavaScript, null no representa un valor numérico cero ni una referencia a un objeto inexistente, como ocurre en algunos otros lenguajes de programación. Es un valor especial que indica: nada, vacío, valor desconocido.
                     </p>
@@ -207,8 +214,9 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let user = null; // el usuario no está autorizado
+let user = null; // el usuario no está autorizado
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 El valor especial <b>undefined</b> también forma un tipo de dato independiente. Indica que algo no está definido, es decir, que no se ha asignado un valor. Este valor puede ser establecido automáticamente por defecto o asignado manualmente (lo cual no se recomienda).
                     </p>
@@ -216,9 +224,10 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let item;
-    console.log(item); // undefined   
+let item;
+console.log(item); // undefined   
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 <b>Symbol</b> es un tipo de dato primitivo, único e inmutable, que se utiliza para crear identificadores únicos.
                     </p>
@@ -226,9 +235,10 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let mySym = Symbol('id');
-    console.log(mySym) // id  
+let mySym = Symbol('id');
+console.log(mySym) // id  
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 El tipo de dato <b>objeto</b> <i>(object)</i> es más complejo en comparación con los tipos de datos primitivos mencionados anteriormente. Puede almacenar colecciones de datos o estructuras más complejas. Guarda información en forma de pares clave-valor (key-value).
                     </p>
@@ -236,13 +246,14 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let person = {
-        name: 'Anne',
-        age: 25,
-        isStudent: true
-    };
-    console.log(person.name); // Anne
+let person = {
+    name: 'Anne',
+    age: 25,
+    isStudent: true
+};
+console.log(person.name); // Anne
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 Un <b>array</b> es una lista ordenada de valores (esencialmente, un objeto con índices numéricos).
                     </p>
@@ -250,9 +261,10 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let fruits = ['apple', 'banana', 'pear'];
-    console.log(fruits[1]); // banana      
+let fruits = ['apple', 'banana', 'pear'];
+console.log(fruits[1]); // banana      
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 Una <b>función</b> <i>(function)</i> es un objeto que se puede ejecutar.
                     </p>
@@ -260,10 +272,10 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    function greet(name) {
-        console.log('Hola, ' + name);
-    }
-    greet("Anne"); // Hola, Anne           
+function greet(name) {
+    console.log('Hola, ' + name);
+}
+greet("Anne"); // Hola, Anne           
                     </code></pre>
                 </div>
                 <div class="arrow-2">&#9650;</div>
@@ -280,6 +292,7 @@
                     <p>
                         JavaScript nos proporciona una gran cantidad de funciones integradas (métodos) que permiten analizar, modificar o formatear cadenas de texto. En este material, vamos a ver tres funciones (o, más exactamente, métodos) del objeto String, que se utilizan con mayor frecuencia en la práctica real:
                     </p>
+                    <hr>
                     <p>
                         &#128204 El método <b>length</b> muestra cuántos caracteres hay en una cadena. Esto incluye espacios, signos de puntuación, caracteres especiales e incluso emojis.
                     </p>
@@ -287,9 +300,10 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let message = '¡Hola, mundo!';
-    console.log(message.length); // 13          
+let message = '¡Hola, mundo!';
+console.log(message.length); // 13          
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 El método <b>includes()</b> permite verificar si un valor está contenido dentro de una cadena. Devuelve <i>true</i> si lo contiene y <i>false</i> si no.
                     </p>
@@ -297,10 +311,11 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let text = '¡JavaScript es genial!';
-    console.log(text.includes('genial'));  // true
-    console.log(text.includes('Python'));  // false         
+let text = '¡JavaScript es genial!';
+console.log(text.includes('genial'));  // true
+console.log(text.includes('Python'));  // false         
                     </code></pre>
+                    <hr>
                     <p>
                         &#128204 <b>toLowerCase()</b> convierte todas las letras de una cadena a minúsculas y <b>toUpperCase()</b> convierte todas las letras de una cadena a mayúsculas.
                     </p>
@@ -308,10 +323,11 @@
                         Ejemplo:
                     </p>
                     <pre><code>
-    let name = "Anne";
-    console.log(name.toLowerCase()); // anne
-    console.log(name.toUpperCase()); // ANNE        
+let name = "Anne";
+console.log(name.toLowerCase()); // anne
+console.log(name.toUpperCase()); // ANNE        
                     </code></pre>
+                    <hr>
                     <p>
                         Los métodos length, includes(), toLowerCase() y toUpperCase() son solo una pequeña parte de lo que el tipo String puede hacer en JavaScript. De hecho, existen decenas de métodos integrados que permiten:
                     </p>
