@@ -570,7 +570,43 @@ greet('Olga'); // Hola, Olga
             </div>
             <div class="answer-wrapper close">
                 <div class="answer-contenido">
-                    
+                    <p>
+                        &#128204 La palabra clave <b>this</b> es una referencia al contexto de ejecución actual. Es como un puntero que indica a qué objeto pertenece el fragmento de código en ese momento específico.
+                    </p>
+                    <p>
+                        <b>this</b> se utiliza con frecuencia cuando:
+                    </p>
+                    <ul>
+                        <li>trabajas con objetos y métodos</li>
+                        <li>necesitas acceder a las propiedades del objeto actual</li>
+                        <li>quieres crear funciones reutilizables que se comporten según el contexto</li>
+                        <li>estás escribiendo clases, manejadores de eventos o callbacks</li>
+                    </ul>
+                    <p>
+                        El contexto de ejecución es el "entorno" en el que se ejecuta el código. <b>this</b> hace referencia al objeto que posee la función en el momento de su ejecución.
+                    </p>
+                    <p>
+                        Si usas <b>this</b> fuera de cualquier función u objeto, se refiere al objeto global: en el navegador es <i>window</i>, en Node.js es <i>global</i>.
+                    </p>
+                    <p>
+                        Si la función está dentro de un objeto, <b>this</b> se refiere a ese objeto.
+                    </p>
+                    <p>
+                        Ejemplo:
+                    </p>
+                    <pre><code>
+const user = {
+    name: 'Ana',
+    sayHi() {
+        console.log('Hola, ' + this.name);
+    }
+};
+                          
+user.sayHi(); // Hola, Ana    
+                    </code></pre>
+                    <p>
+                        Aquí, <i>this.name</i> se refiere a <i>user.name</i>, porque la función fue llamada a través del objeto <i>user</i>.
+                    </p>
                 </div>
                 <div class="arrow-2">&#9650;</div>
             </div>
